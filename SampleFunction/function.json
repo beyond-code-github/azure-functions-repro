@@ -1,0 +1,16 @@
+{
+  "bindings": [
+    {
+      "name": "myTimer",
+      "type": "timerTrigger",
+      "direction": "in",
+      "schedule": "* */5 * * * *"
+    }
+  ],
+  "retry": {
+    "strategy": "fixedDelay",
+    "maxRetryCount": 1,
+    "delayInterval": "00:01:00"  
+  }
+}
+ 
